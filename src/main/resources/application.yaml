@@ -1,0 +1,7 @@
+server:
+  servlet.context-path: /trading
+  port: 8080
+
+spring:
+  main:
+    banner-mode: OFF
