@@ -10,9 +10,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
-public class DefaultStrategyTest {
+public class DefaultSignalStrategyTest {
 
-    private SignalStrategy signalStrategy = new DefaultStrategy();
+    private SignalStrategy signalStrategy = new DefaultSignalStrategy();
 
     @Spy
     private Algo algo = new Algo();

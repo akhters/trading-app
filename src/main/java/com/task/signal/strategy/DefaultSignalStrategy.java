@@ -2,7 +2,7 @@ package com.task.signal.strategy;
 
 import com.task.library.Algo;
 
-public class DefaultStrategy implements SignalStrategy {
+public class DefaultSignalStrategy implements SignalStrategy {
 
     @Override
     public void handle(Algo algo) {
