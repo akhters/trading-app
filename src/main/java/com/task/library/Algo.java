@@ -1,5 +1,8 @@
 package com.task.library;
 
+/**
+ * Algo containig methods to execute for signals. Can't be changed
+ */
 public class Algo {
 
     public void doAlgo() {
