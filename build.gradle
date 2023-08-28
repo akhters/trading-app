@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.7.15'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 	id 'java'
+	id 'com.diffplug.spotless' version '6.17.0'
 }
 
 group = 'com.task'
@@ -42,5 +43,15 @@ test {
 	testLogging {
 		events "passed", "skipped", "failed"
 	}
+}
+
+spotless {
+	java {
+		googleJavaFormat('1.15.0')
+		removeUnusedImports()
+		importOrder 'java', 'javax', 'org', 'io', 'com', 'lombok', '\\#'
+		formatAnnotations()
+	}
+	enforceCheck = true
 }
 

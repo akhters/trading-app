@@ -1,9 +1,7 @@
 package com.task.library;
 
-/**
- * Signal Handler interface, can't be changed
- */
+/** Signal Handler interface, can't be changed */
 public interface SignalHandler {
 
-    void handleSignal(int signal);
+  void handleSignal(int signal);
 }
