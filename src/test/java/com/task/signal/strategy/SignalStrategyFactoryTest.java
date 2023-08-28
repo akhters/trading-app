@@ -29,11 +29,14 @@ public class SignalStrategyFactoryTest {
   }
 
   @Test
-  void shouldGetStrategy() {
+  void shouldGetStrategy_forKnowSignals() {
     assertThat(factory.getStrategy(100)).isEqualTo(signalStrategyMock1);
 
     assertThat(factory.getStrategy(200)).isEqualTo(signalStrategyMock2);
+  }
 
+  @Test
+  void shouldGetDefaultStrategy_forUnknownSignal() {
     assertThat(factory.getStrategy(300)).isInstanceOf(DefaultSignalStrategy.class);
   }
 }
