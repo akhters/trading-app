@@ -56,9 +56,9 @@ public class SignalControllerTest {
 
   public static Stream<Arguments> signalDtoProvider() {
     return Stream.of(
-        Arguments.of("{\"value\": \"a-value\"}"),       // value is string
-        Arguments.of("{\"value\": 1.5}"),               // value is float
-        Arguments.of("{}")                              // value is null
+        Arguments.of("{\"value\": \"a-value\"}"), // value is string
+        Arguments.of("{\"value\": 1.5}"), // value is float
+        Arguments.of("{}") // value is null
         );
   }
 }
